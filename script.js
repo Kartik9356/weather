@@ -17,8 +17,8 @@ async function request() {
         let temp = `<p style="font-size:30px">${ans.main.temp} °C</p>`
         let desc = `<p>Weather: ${ans.weather[0].description}</p>`
 
-        let humidaty = ` <img class="wind" style="margin-left: 50px" src="/src/humidity.png" alt=""><div style="line-height: 2px"> <p style="font-size:22px"> ${ans.main.humidity}%</p><p>humidity</p></div> `
-        let speed = ` <img class="wind" src="/src/wind.png" alt=""> <div style="line-height: 2px"><p style="font-size:22px"> ${ans.wind.speed} m/s</p><p>wind speed</p></div>`
+        let humidaty = ` <img class="wind" style="margin-left: 50px" src="src\humidity.png" alt=""><div style="line-height: 2px"> <p style="font-size:22px"> ${ans.main.humidity}%</p><p>humidity</p></div> `
+        let speed = ` <img class="wind" src="src\wind.png" alt=""> <div style="line-height: 2px"><p style="font-size:22px"> ${ans.wind.speed} m/s</p><p>wind speed</p></div>`
         let div = `<div class="center space">${speed} ${humidaty}</div>`
 
 
@@ -32,8 +32,8 @@ async function request() {
         return time;
         }
 
-        let sunrise = ` <img class="wind" src="/src/sunrise.png" alt=""><div style="line-height: 2px"> <p style="font-size:18px"> ${time(ans.sys.sunrise)}</p><p style="font-size:14px">sunrise</p></div> `
-        let sunset = ` <img class="wind" style="margin-left: 65px" src="/src/sunset.png" alt=""> <div style="line-height: 2px"><p style="font-size:18px"> ${time(ans.sys.sunset)} </p><p style="font-size:14px">sunset</p></div>`
+        let sunrise = ` <img class="wind" src="src\sunrise.png" alt=""><div style="line-height: 2px"> <p style="font-size:18px"> ${time(ans.sys.sunrise)}</p><p style="font-size:14px">sunrise</p></div> `
+        let sunset = ` <img class="wind" style="margin-left: 65px" src="src\sunset.png" alt=""> <div style="line-height: 2px"><p style="font-size:18px"> ${time(ans.sys.sunset)} </p><p style="font-size:14px">sunset</p></div>`
         let sun = `<div class="center space">${sunrise} ${sunset}</div>`
 
 
