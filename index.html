@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/src/nav.png">
+</head>
+
+<body>
+    <div class="container">
+        <div id="weather">
+            <div class="center">
+                <input type="text" placeholder="udgir" id="city" placeholder="City">
+                <button class="button" onclick="request()"><img class="search" src="/src/search.png" alt=""></button>
+            </div>
+            <div class="center">
+                <img class="sun" src="/src/sun.png" alt="">
+                <img class="temp" src="/src/cloud3.png" alt="">
+            </div>
+            <div id="weather-info1" class="center"></div>
+            <div id="weather-info2"></div>
+        </div>
+    </div>
+   <script src="script.js"></script>
+
+
+</body>
+
+</html>
